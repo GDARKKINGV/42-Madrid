@@ -10,11 +10,11 @@ This repository is created to track my progress as a student of 42, document the
 <details>
 <summary>CommonCore 🖥️</summary>
 
-1. [Libft](https://github.com/GDARKKINGV/42cursus/tree/main/libft) 📚
-2. [Ft_printf](https://github.com/GDARKKINGV/42cursus/tree/main/ft_printf) 🖨️
-3. [Get_next_line](https://github.com/GDARKKINGV/42cursus/tree/main/get_next_line) (in progress) 📃
-4. [Born2beroot](https://github.com/GDARKKINGV/42cursus/tree/main/Born2beroot) 💻
-5. [Push_swap](https://github.com/GDARKKINGV/42cursus/tree/main/Push_swap) (in progress) 🔃 
+1. [Libft](https://github.com/GDARKKINGV/42-Madrid/tree/main/CommonCore/libft) 📚
+2. [Ft_printf](https://github.com/GDARKKINGV/42-Madrid/tree/main/CommonCore/ft_printf) 🖨️
+3. [Get_next_line](https://github.com/GDARKKINGV/42-Madrid/tree/main/CommonCore/get_next_line) (in progress) 📃
+4. [Born2beroot](https://github.com/GDARKKINGV/42-Madrid/tree/main/CommonCore/Born2beroot) 💻
+5. [Push_swap](https://github.com/GDARKKINGV/42-Madrid/tree/main/CommonCore/Push_swap) (in progress) 🔃 
 </details>
 
 <details>
