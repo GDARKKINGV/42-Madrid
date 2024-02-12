@@ -20,3 +20,5 @@ This repository is created to track my progress as a student of 42, document the
 <details>
 <summary>Piscine 🏊‍♂️</summary>
 </details>
+
+### [You can check my Intra profile here](https://profile.intra.42.fr/users/jugirald)
