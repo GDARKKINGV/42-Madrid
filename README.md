@@ -19,6 +19,17 @@ This repository is created to track my progress as a student of 42, document the
 
 <details>
 <summary>Piscine 🏊‍♂️</summary>
+
+1. [Shell00](https://github.com/GDARKKINGV/42-Madrid/tree/main/Piscine/shell00)
+2. [Shell01](https://github.com/GDARKKINGV/42-Madrid/tree/main/Piscine/shell01)
+3. [C00](https://github.com/GDARKKINGV/42-Madrid/tree/main/Piscine/c00)
+4. [C01](https://github.com/GDARKKINGV/42-Madrid/tree/main/Piscine/c01)
+5. [C02](https://github.com/GDARKKINGV/42-Madrid/tree/main/Piscine/c02)
+6. [C03](https://github.com/GDARKKINGV/42-Madrid/tree/main/Piscine/c03)
+7. [C04](https://github.com/GDARKKINGV/42-Madrid/tree/main/Piscine/c04)
+8. [C05](https://github.com/GDARKKINGV/42-Madrid/tree/main/Piscine/c05)
+9. [C06](https://github.com/GDARKKINGV/42-Madrid/tree/main/Piscine/c06)
+10. [C07](https://github.com/GDARKKINGV/42-Madrid/tree/main/Piscine/c07)
 </details>
 
 ### [You can check my Intra profile here](https://profile.intra.42.fr/users/jugirald)
