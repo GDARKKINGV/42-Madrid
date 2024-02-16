@@ -2,11 +2,19 @@
 <img src="https://github.com/GDARKKINGV/42-project-badges/blob/main/badges/libftm.png" alt="libft"/>
 </P>
 
-# ℹ️ This project consists of programming a library in C. Your library will have a bunch of general-purpose functions on which your programs will rely. ℹ️
+# Welcome to the Libft. your first project! 🙌
 
-## These will be the functions you will need to implement in this project. These functions serve diverse purposes ranging from character classification to memory manipulation.
+## In this project, you will reimplement some functions from the standard C library (libc) and develop additional functions to build your own library. This exercise aims to enhance your understanding of C programming and improve your skills in implementing common functionalities.
 
-## Character Classification Functions:
+
+## Part 1: Reimplementation of Standard Functions:
+To begin, you will re-implement several functions from the libc. Your functions will have the same prototypes and behaviors as the original libc functions. You are not allowed to use any forbidden functions; you must write your own implementations.
+
+
+<details>
+<summary>List of Reimplemented Functions:</summary>
+<h2>Character Classification Functions:</h2>
+
 <strong>isalpha:</strong> Checks if a character is an alphabet.
 
 <strong>isdigit:</strong> Checks if a character is a digit.
@@ -17,7 +25,7 @@
 
 <strong>isprint:</strong> Checks if a character is printable.
 
-## String Manipulation Functions:
+<h2>String Manipulation Functions:</h2>
 <strong>strlen:</strong>  Calculates the length of a string.
 
 <strong>memset:</strong> Fills a block of memory with a specified value.
@@ -53,8 +61,14 @@
 <strong>calloc:</strong> Allocates memory for an array and initializes it to zero.
 
 <strong>strdup:</strong> Duplicates a string in memory.
+</details>
 
-## Additional Functions:
+## Part 2: Additional Functions:
+In this part, you will develop a set of additional functions that either are not part of the libc or have a different implementation. These functions will include memory and string manipulation as well as list manipulation.
+
+<details>
+<summary> Additional Functions: </summary>
+
 <strong>ft_substr:</strong> Allocates and returns a substring of the string 's'. The substring starts at index 'start' and has a maximum length of 'len'. Returns NULL if memory allocation fails.
 
 <strong>ft_strjoin:</strong> Allocates and returns a new string formed by concatenating 's1' and 's2'. Returns NULL if memory allocation fails.
@@ -76,3 +90,8 @@
 <strong>ft_putendl_fd:</strong> Writes the string 's' followed by a newline to the specified file descriptor 'fd'.
 
 <strong>ft_putnbr_fd:</strong> Writes the integer 'n' to the specified file descriptor 'fd'.
+
+</details>
+
+## Conclusion:
+Completing the Libft project will significantly improve your C programming skills and deepen your understanding of fundamental functionalities. Approach each task systematically, thoroughly test your functions, and aim to achieve clean, efficient, and well-documented code. Good luck! 😁
