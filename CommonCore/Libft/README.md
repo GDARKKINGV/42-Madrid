@@ -2,8 +2,7 @@
 <img src="https://github.com/GDARKKINGV/42-project-badges/blob/main/badges/libftm.png" alt="libft"/>
 </P>
 
-## ℹ️ This project consists of programming a library in C.
-## Your library will have a bunch of general-purpose functions on which your programs will rely. ℹ️
+## ℹ️ This project consists of programming a library in C. Your library will have a bunch of general-purpose functions on which your programs will rely. ℹ️
 
 # These will be the functions you will need to implement in this project.
 ## These functions serve diverse purposes ranging from character classification to memory manipulation.
