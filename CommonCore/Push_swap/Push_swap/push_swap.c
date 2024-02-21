@@ -6,7 +6,7 @@
 /*   By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 18:04:30 by jugirald          #+#    #+#             */
-/*   Updated: 2024/01/24 21:14:56 by jugirald         ###   ########.fr       */
+/*   Updated: 2024/02/21 17:34:05 by jugirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,13 @@ int	main(int argc, char **argv)
 	if (argc < 2)
 		return (ft_putstr_fd(argerror, 2));
 	else if (argc == 2)
-		//gestionar con split
+	{
+
+	}
 	else if (argc > 2)
-		//gestionar normal
+	{
+
+	}
 }
 
 /*
