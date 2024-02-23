@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   input_handler.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/24 19:29:42 by jugirald          #+#    #+#             */
-/*   Updated: 2024/02/23 18:59:01 by jugirald         ###   ########.fr       */
+/*   Created: 2024/02/23 18:49:01 by jugirald          #+#    #+#             */
+/*   Updated: 2024/02/23 19:31:12 by jugirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#include "../../includes/push_swap.h"
 
-# include <stdbool.h>
-# include <limits.h>
-# include "../libft/includes/libft.h"
-# include "../libft/includes/ft_printf.h"
+int	input_handler(int argc, char **argv)
+{
+	char	*argerror;
+	char	**numlist;
+	int		i;
 
-int	main(int argc, char **argv);
+	argerror = "Error\n";
+	if (argc < 2)
+		return (ft_putstr_fd(argerror, 2), 0);
+	else if (argc == 2)
+	{
+		numlist = ft_split(argv[1], ' ');
+		if (!numlist)
+			return (ft_putstr_fd(argerror, 2), 0);
+	}
+	else
+	{
+	}
+}
 
-//handlers
-int	input_handler(int argc, char **argv);
 
-//moves
-
-
-#endif

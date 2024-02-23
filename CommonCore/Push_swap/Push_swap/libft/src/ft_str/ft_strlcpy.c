@@ -6,7 +6,7 @@
 /*   By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 20:04:58 by jugirald          #+#    #+#             */
-/*   Updated: 2024/02/22 22:04:58 by jugirald         ###   ########.fr       */
+/*   Updated: 2024/02/23 18:18:47 by jugirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ size_t	ft_strlcpy( char *dst, const char *src, size_t dstsize)
 		dst[i] = '\0';
 	}
 	while (src[i])
-			i++;
+		i++;
 	return (i);
 }
 

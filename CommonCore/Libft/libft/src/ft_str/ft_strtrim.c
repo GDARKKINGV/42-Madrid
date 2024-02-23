@@ -6,7 +6,7 @@
 /*   By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 08:44:35 by jugirald          #+#    #+#             */
-/*   Updated: 2023/09/19 08:44:35 by jugirald         ###   ########.fr       */
+/*   Updated: 2024/02/23 18:19:10 by jugirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s1start = 0;
 	i = 0;
 	while (s1start < s1end && is_set(s1[s1start], set))
-			s1start++;
+		s1start++;
 	while (s1end > s1start && is_set(s1[s1end - 1], set))
-			s1end--;
+		s1end--;
 	str = malloc(sizeof(char) * (s1end - s1start) + 1);
 	if (!str)
 		return (0);

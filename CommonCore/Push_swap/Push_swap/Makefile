@@ -6,16 +6,17 @@
 #    By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/24 17:59:20 by jugirald          #+#    #+#              #
-#    Updated: 2024/02/22 22:42:38 by jugirald         ###   ########.fr        #
+#    Updated: 2024/02/23 18:39:34 by jugirald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 # Standard
-NAME			= libft.a
+NAME			= push_swap
 
 # Directories
-INC				= inc/
+LIBFT			= libft/libft.a
+INC				= includes/
 SRC_DIR			= src/
 OBJ_DIR			= obj/
 
@@ -27,20 +28,29 @@ AR				= ar rcs
 
 # Source Files
 
-ERRORS_DIR		=
+HANDLERS_DIR	=	$(SRC_DIR)handlers/input_handler.c \
+				=	$(SRC_DIR)handlers/
 
-MOVES_DIR		=
+MOVES_DIR		=	$(SRC_DIR)moves/push.c \
+					$(SRC_DIR)moves/reverse_rotate.c \
+					$(SRC_DIR)moves/rotate.c \
+					$(SRC_DIR)moves/swap.c
 
 PARSES_DIR		=
 
 
 # Concatenate all source files
 
-SRCS 				= $(ERRORS_DIR) $(MOVES_DIR) $(PARSES_DIR)
+SRCS 				= $(HANDLERS_DIR) $(MOVES_DIR) $(PARSES_DIR)
 
 OBJ 				= $(patsubst $(SRC_DIR)%.c,$(OBJ_DIR)%.o,$(SRCS))
 
 # Build rules
+start:				
+					@make all
+
+$(LIBFT):
+					@make -C ./libft
 
 all: 				$(NAME)
 

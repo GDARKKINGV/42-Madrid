@@ -6,30 +6,16 @@
 /*   By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 18:04:30 by jugirald          #+#    #+#             */
-/*   Updated: 2024/02/21 17:34:05 by jugirald         ###   ########.fr       */
+/*   Updated: 2024/02/23 18:54:38 by jugirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../includes/push_swap.h"
 
 int	main(int argc, char **argv)
 {
-	char	*argerror;
-	char	**numlist;
-
-	argerror = "Error\n";
-	if (argc < 2)
-		return (ft_putstr_fd(argerror, 2));
-	else if (argc == 2)
-	{
-		numlist = ft_split(argv[1], ' ');
-		if (!numlist)
-			return (ft_putstr_fd(argerror, 2));
-	}
-	else if (argc > 2)
-	{
-
-	}
+	input_handler(argc, argv);
+	return (0);
 }
 
 /*
@@ -61,10 +47,9 @@ el orden de los numeros debe ser acendente
 
 las instrucciones deben separarce utilizando "\n"
 
-en caso de error se debe mostrar Error seguido de "\n" en la salida de error estandar
+en caso de error se debe mostrar Error seguido de "\n"
  
 */
-
 
 /*
 operaciones disponibles
