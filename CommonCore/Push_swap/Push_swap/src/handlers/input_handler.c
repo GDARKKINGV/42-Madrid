@@ -12,11 +12,11 @@
 
 #include "../../includes/push_swap.h"
 
-int	input_handler(int argc, char **argv)
+int input_handler(int argc, char **argv)
 {
-	char	*argerror;
-	char	**numlist;
-	int		i;
+	char *argerror;
+	char **numlist;
+	int i;
 
 	argerror = "Error\n";
 	if (argc < 2)
@@ -24,12 +24,11 @@ int	input_handler(int argc, char **argv)
 	else if (argc == 2)
 	{
 		numlist = ft_split(argv[1], ' ');
-		if (!numlist)
+		if (!numlist[0])
+			// hacer una funcion que libere una matriz para la libft y usarla aqui
 			return (ft_putstr_fd(argerror, 2), 0);
 	}
 	else
 	{
 	}
 }
-
-

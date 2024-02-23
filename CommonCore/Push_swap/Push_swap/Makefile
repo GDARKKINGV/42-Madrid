@@ -41,7 +41,7 @@ PARSES_DIR		=
 
 # Concatenate all source files
 
-SRCS 				= $(HANDLERS_DIR) $(MOVES_DIR) $(PARSES_DIR)
+SRCS 				= $(HANDLERS_DIR) $(MOVES_DIR)
 
 OBJ 				= $(patsubst $(SRC_DIR)%.c,$(OBJ_DIR)%.o,$(SRCS))
 
