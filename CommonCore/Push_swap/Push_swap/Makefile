@@ -6,37 +6,61 @@
 #    By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/24 17:59:20 by jugirald          #+#    #+#              #
-#    Updated: 2024/01/24 18:29:57 by jugirald         ###   ########.fr        #
+#    Updated: 2024/02/22 22:42:38 by jugirald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= push_swap
 
-SRCS		= push_swap.c
-OBJS		= $(SRCS:.c=.o)
+# Standard
+NAME			= libft.a
 
-LIBFT_PATH	= libft
-LIBFT		= $(LIBFT_PATH)/libft.a
+# Directories
+INC				= inc/
+SRC_DIR			= src/
+OBJ_DIR			= obj/
 
-CFLAGS		= -Wall -Werror -Wextra
+# Compiler and Flags
+CC				= gcc
+CFLAGS			= -Wall -Wextra -Werror -I
+RM				= rm -f
+AR				= ar rcs
 
-$(NAME): $(LIBFT) $(OBJS)
-	cp $(LIBFT) $(NAME)
-	ar rc $(NAME) $(OBJS)
+# Source Files
 
-$(LIBFT):
-		make -C $(LIBFT_PATH) all
+ERRORS_DIR		=
 
-all: $(NAME)
+MOVES_DIR		=
+
+PARSES_DIR		=
+
+
+# Concatenate all source files
+
+SRCS 				= $(ERRORS_DIR) $(MOVES_DIR) $(PARSES_DIR)
+
+OBJ 				= $(patsubst $(SRC_DIR)%.c,$(OBJ_DIR)%.o,$(SRCS))
+
+# Build rules
+
+all: 				$(NAME)
+
+$(NAME): 			$(OBJ) $(LIBFT)
+					@$(CC) $(CFLAGS) $(INC) $(OBJ) $(LIBFT) -o $(NAME)
+
+# Compile object files from source files
+$(OBJ_DIR)%.o:		$(SRC_DIR)%.c 
+					@mkdir -p $(@D)
+					@$(CC) $(CFLAGS) $(INC) -c $< -o $@
 
 clean:
-		make -C $(LIBFT_PATH) clean
-		rm -f $(OBJS)
+					@$(RM) -r $(OBJ_DIR)
+					@make clean -C ./libft
 
-fclean: clean
-		make -C $(LIBFT_PATH) fclean
-		rm -f $(NAME)
+fclean: 			clean
+					@$(RM) $(NAME)
+					@$(RM) $(LIBFT)
 
-re: fclean all
+re: 				fclean all
 
-.PHONY: all clean fclean re libft
+# Phony targets represent actions not files
+.PHONY: 			start all clean fclean re
