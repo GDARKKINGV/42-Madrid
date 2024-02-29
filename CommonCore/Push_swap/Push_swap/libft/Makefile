@@ -6,7 +6,7 @@
 #    By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/16 17:52:11 by jugirald          #+#    #+#              #
-#    Updated: 2024/02/22 22:36:47 by jugirald         ###   ########.fr        #
+#    Updated: 2024/02/28 18:22:19 by jugirald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,8 @@ FTMEM_DIR		=	$(SRC_DIR)ft_mem/ft_bzero.c \
 					$(SRC_DIR)ft_mem/ft_memcmp.c \
 					$(SRC_DIR)ft_mem/ft_memcpy.c \
 					$(SRC_DIR)ft_mem/ft_memmove.c \
-					$(SRC_DIR)ft_mem/ft_memset.c  
+					$(SRC_DIR)ft_mem/ft_memset.c  \
+					$(SRC_DIR)ft_mem/ft_free_tab.c
 
 FTPUT_DIR		=	$(SRC_DIR)ft_put/ft_putchar_fd.c \
 					$(SRC_DIR)ft_put/ft_putendl_fd.c \

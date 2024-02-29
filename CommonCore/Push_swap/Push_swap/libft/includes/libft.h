@@ -6,7 +6,7 @@
 /*   By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 21:21:57 by jugirald          #+#    #+#             */
-/*   Updated: 2024/02/22 22:30:31 by jugirald         ###   ########.fr       */
+/*   Updated: 2024/02/28 18:21:02 by jugirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *str, int c, size_t len);
+int		ft_free_tab(char **tab);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);

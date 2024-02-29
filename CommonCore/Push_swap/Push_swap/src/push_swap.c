@@ -6,7 +6,7 @@
 /*   By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 18:04:30 by jugirald          #+#    #+#             */
-/*   Updated: 2024/02/23 18:54:38 by jugirald         ###   ########.fr       */
+/*   Updated: 2024/02/28 19:53:50 by jugirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,11 @@
 
 int	main(int argc, char **argv)
 {
-	input_handler(argc, argv);
+	if (argc > 1)
+	{
+		if (input_handler(argc, argv))
+			return (ft_putstr_fd('Error:', 2), 0);
+	}
 	return (0);
 }
 
