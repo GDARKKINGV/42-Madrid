@@ -6,20 +6,37 @@
 /*   By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 18:04:30 by jugirald          #+#    #+#             */
-/*   Updated: 2024/02/28 19:53:50 by jugirald         ###   ########.fr       */
+/*   Updated: 2024/07/03 19:57:57 by jugirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
+static void print_stack(t_stack_node *stack)
+{
+	t_stack_node *tmp;
+
+	tmp = stack;
+	while (tmp)
+	{
+		ft_printf("%d\n", tmp->nbr);
+		tmp = tmp->next;
+	}
+}
+
 int	main(int argc, char **argv)
 {
-	if (argc > 1)
-	{
-		if (input_handler(argc, argv))
-			return (ft_putstr_fd('Error:', 2), 0);
-	}
-	return (0);
+	t_stack_node *stack_a;
+
+	stack_a = NULL;
+	if (argc == 1 || (argc == 2 && !argv[1][0]))
+		return (1);
+	else if (argc == 2)
+		argv = ft_split(argv[1], ' ');
+	init_handler(&stack_a, argv);
+	print_stack(stack_a);
+	free_stack(&stack_a);
+	return (1);
 }
 
 /*
@@ -56,7 +73,7 @@ en caso de error se debe mostrar Error seguido de "\n"
 */
 
 /*
-operaciones disponibles
+operaciones disponiblesmi
 
 sa swap a: Intercambia los dos primeros elementos del stack a. No hace nada si
 hay uno o menos elementos.

@@ -6,7 +6,7 @@
 #    By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/24 17:59:20 by jugirald          #+#    #+#              #
-#    Updated: 2024/02/23 18:39:34 by jugirald         ###   ########.fr        #
+#    Updated: 2024/07/03 19:29:09 by jugirald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,20 +28,20 @@ AR				= ar rcs
 
 # Source Files
 
-HANDLERS_DIR	=	$(SRC_DIR)handlers/input_handler.c \
-				=	$(SRC_DIR)handlers/
+HANDLERS_DIR	=	$(SRC_DIR)handlers/init_handler.c \
+					$(SRC_DIR)handlers/error_handler.c
 
 MOVES_DIR		=	$(SRC_DIR)moves/push.c \
 					$(SRC_DIR)moves/reverse_rotate.c \
 					$(SRC_DIR)moves/rotate.c \
 					$(SRC_DIR)moves/swap.c
 
-PARSES_DIR		=
+MAIN_DIR		=	$(SRC_DIR)push_swap.c
 
 
 # Concatenate all source files
 
-SRCS 				= $(HANDLERS_DIR) $(MOVES_DIR)
+SRCS 				= $(HANDLERS_DIR) $(MOVES_DIR) $(MAIN_DIR)
 
 OBJ 				= $(patsubst $(SRC_DIR)%.c,$(OBJ_DIR)%.o,$(SRCS))
 
@@ -71,6 +71,9 @@ fclean: 			clean
 					@$(RM) $(LIBFT)
 
 re: 				fclean all
+
+sanitize:			$(OBJ) $(LIBFT)
+					@$(CC) $(CFLAGS) -fsanitize=address -I $(INC) $(OBJ) $(LIBFT) -o $(NAME)
 
 # Phony targets represent actions not files
 .PHONY: 			start all clean fclean re

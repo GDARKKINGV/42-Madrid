@@ -6,7 +6,7 @@
 /*   By: jugirald <jugirald@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 19:15:57 by jugirald          #+#    #+#             */
-/*   Updated: 2024/02/22 22:04:09 by jugirald         ###   ########.fr       */
+/*   Updated: 2023/09/24 20:57:21 by jugirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	size_t	len;
-
-	len = ft_strlen(s);
-	write(fd, &*s, len);
+	while (*s)
+	{
+		write(fd, &*s, 1);
+		s++;
+	}
 	write(fd, "\n", 1);
 }
 /*
